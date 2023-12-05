@@ -77,7 +77,6 @@ def test_filter_brand_shampoo_for_head():
     locator_send_brand = "//span[text()='Бренд']"
 
     element_send_brand = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, locator_send_brand)))
-
     # Прокручиваем к элементу 'Бренд'
     driver.execute_script("arguments[0].scrollIntoView(true);", element_send_brand)
 
