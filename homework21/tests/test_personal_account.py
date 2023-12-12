@@ -1,4 +1,4 @@
-from homework21.conftest import pers_account
+from homework21.conftest import pers_account, driver
 
 
 def test_authorization(pers_account):

@@ -9,9 +9,6 @@ class PersonalAccount(BasePage):
         self.email = "Alex-komiirny@gmail.com"
         self.password = "QWdscc59+"
 
-    def get_page_source(self):
-        return self._driver.page_source
-
     def account_enter_email(self):
         self.send_text_to_search_field(self.email, self.locators.locator_email)
 

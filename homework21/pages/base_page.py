@@ -21,3 +21,9 @@ class BasePage(ABC):
         element.send_keys(text)
         element.send_keys(Keys.ENTER)
 
+    def get_page_source(self):
+        return self._driver.page_source
+
+    def check_current_url(self):
+        return self._driver.current_url
+
